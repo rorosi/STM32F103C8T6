@@ -99,12 +99,15 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  volatile unsigned int * reg3 = 0x40011010;
+  volatile unsigned int * reg2 = 0x40011010;
   while (1)
   {
-
+       *reg2 = 0x2000;
+       HAL_Delay(100);
+       *reg2 = (0x2000 << 16);
+       HAL_Delay(100);
     /* USER CODE END WHILE */
-
+  
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
