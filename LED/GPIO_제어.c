@@ -92,7 +92,6 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  volatile unsigned int * reg3 = 0x40011010;
   while (1)
   {
 
